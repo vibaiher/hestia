@@ -1,0 +1,27 @@
+{
+  "app": {
+    "name": "Hestia",
+    "subtitle": "Gestión Financiera Familiar",
+    "title_full": "Hestia - Gestión Financiera Familiar"
+  },
+  "home": {
+    "welcome": "Bienvenido a Hestia",
+    "description": "Tu sistema de gestión financiera familiar. Mantén control de tus finanzas del hogar de manera simple y práctica.",
+    "system_info": "📅 Información del Sistema",
+    "current_date": "Fecha actual",
+    "status": "Estado",
+    "status_ok": "Sistema iniciado correctamente"
+  },
+  "features": {
+    "title": "Próximas funcionalidades",
+    "income_tracking": "📊 Seguimiento de ingresos",
+    "expense_management": "💰 Gestión de gastos",
+    "bank_monitoring": "🏦 Monitoreo de cuentas bancarias",
+    "investment_tracking": "📈 Seguimiento de inversiones",
+    "expense_categorization": "🏷️ Categorización de gastos"
+  },
+  "footer": {
+    "tagline": "Hestia - Diosa del hogar y la familia",
+    "motto": "Desarrollado con simplicidad en mente"
+  }
+}

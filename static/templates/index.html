@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{.Text.App.TitleFull}}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>🏛️ {{.Text.App.Name}}</strong></li>
+            </ul>
+            <ul>
+                <li><small>{{.Text.App.Subtitle}}</small></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section>
+            <h1>{{.Text.Home.Welcome}}</h1>
+            <p>{{.Text.Home.Description}}</p>
+            
+            <article>
+                <header>
+                    <h3>{{.Text.Home.SystemInfo}}</h3>
+                </header>
+                <p><strong>{{.Text.Home.CurrentDate}}:</strong> {{.Date}}</p>
+                <p><strong>{{.Text.Home.Status}}:</strong> {{.Text.Home.StatusOk}}</p>
+            </article>
+            
+            <section>
+                <h4>{{.Text.Features.Title}}:</h4>
+                <ul>
+                    <li>{{.Text.Features.IncomeTracking}}</li>
+                    <li>{{.Text.Features.ExpenseManagement}}</li>
+                    <li>{{.Text.Features.BankMonitoring}}</li>
+                    <li>{{.Text.Features.InvestmentTracking}}</li>
+                    <li>{{.Text.Features.ExpenseCategorization}}</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    
+    <footer class="container">
+        <small>
+            {{.Text.Footer.Tagline}} | 
+            <a href="#" class="secondary">{{.Text.Footer.Motto}}</a>
+        </small>
+    </footer>
+</body>
+</html>
