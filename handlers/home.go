@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"hestia/i18n"
+	"hestia/static"
 )
 
 type PageData struct {
@@ -17,7 +18,7 @@ func Home() http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		
-		tmpl, err := template.ParseFiles("../static/templates/index.html")
+		tmpl, err := template.ParseFiles(static.File("templates/index.html"))
 		if err != nil {
 			http.Error(w, "Error loading template", http.StatusInternalServerError)
 			return

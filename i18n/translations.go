@@ -3,6 +3,8 @@ package i18n
 import (
 	"encoding/json"
 	"os"
+	
+	"hestia/static"
 )
 
 type Translations struct {
@@ -36,7 +38,7 @@ type Translations struct {
 func Load() (Translations, error) {
 	var translations Translations
 	
-	data, err := os.ReadFile("../static/locales/es.json")
+	data, err := os.ReadFile(static.File("locales/es.json"))
 	if err != nil {
 		return translations, err
 	}
